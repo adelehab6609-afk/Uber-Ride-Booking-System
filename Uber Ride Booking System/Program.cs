@@ -21,6 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(
     op => op.UseSqlServer(builder.Configuration.GetConnectionString("Con")));
 
 builder.Services.AddScoped<ITokenService, TokenService>();
+//// adellll
 
 builder.Services.AddAuthentication(
     a => {
